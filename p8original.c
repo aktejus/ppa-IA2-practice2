@@ -48,6 +48,7 @@ small=t[0];
     small=t[i];
   }
 return small;
+  }
 void output(int n, Triangle t[n], Triangle smallest)
 {
   for(int i=0;i<n;i++)
