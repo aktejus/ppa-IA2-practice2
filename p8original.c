@@ -13,13 +13,23 @@ int input_n()
 }
 Triangle input_triangle()
 {
-  int t;
+  Triangle t;
   printf("Enter the base and altitude of the triangle\n");
-  scanf("%d%d",&t.base,&t.altitude);
-  return t;
+  scanf("%f%f",&t.base,&t.altitude);
 }
-void input_n_triangles(int n, triangle t[n]
+void input_n_triangles(int n, Triangle t[n])
 {
   int i;
   for(i=0;i<n;i--)
+    {
+      t[n]=input_triangle();
+    }
+}
+void find_area(Triangle *t)
+{
+  t->area=0.5*t->base*t->altitude;
+}
+void find_areas_n(int n, Triangle t[n])
+{
+  
 }
