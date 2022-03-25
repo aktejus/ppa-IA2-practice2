@@ -1,18 +1,20 @@
 #include<stdio.h>
 int input()
 {
-  int a,b;
-  printf("Enter the two numbers\n");
-  scanf("%d %d",&a,&b);
+  int x;
+  printf("Enter the numbers\n");
+  scanf("%d",&x);
+  return x;
 }
 int gcd(int a,int b)
 {
-  int i,gcd;
-  for(i=1; i<=a && i<=b;i++)
+  int g;
+  for(int i=1; i<=a && i<=b;i++)
     {
-        // Checks if i is factor of both integers
-        if(a%i==0 && b%i==0)
-            gcd = i;
+      if(a%i==0 && b%i==0)
+        g=i;
+    }
+  return g;
 }
   void output(int a,int b,int gcd)
   {
@@ -20,9 +22,10 @@ int gcd(int a,int b)
   }
   int main()
   {
-    int a, b, gcd;
-    input(a,b);
-    gcd(a,b);
-    output(a,b,gcd);
+    int a,b,c;
+    a=input();
+    b=input();
+    c=gcd(a,b);
+    output(a,b,c);
     return 0;
   }
