@@ -67,4 +67,4 @@ int main()
   small=find_smallest_triangle(n,t);
   output(n,t,small);
   return 0;
-  }
+  } 

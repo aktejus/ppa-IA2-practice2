@@ -30,4 +30,4 @@ int main()
   check_scalene(a,b,c,&isscalene);
   output(a,b,c,isscalene);
   return 0;
-}
+} 

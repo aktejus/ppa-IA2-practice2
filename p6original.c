@@ -1,14 +1,11 @@
 #include<stdio.h>
-int main()
+void input_string(char a[50])
 {
-  int a,b,gcd;
-  printf("Enter the two numbers\n");
-  scanf("%d%d",&a,&b);
-  for(int i=1;i<=a && i<=b;i++)
-    {
-      if(a%i==0 && b%i==0)
-        gcd=i;
-    }
-  printf("The GCD of %d and %d is %d",a,b,gcd);
-  return 0;
+  printf("Enter the string\n");
+  scanf("%s",&a[50]);
+}                     
+char str_reverse(char a)
+{
+  
 }
+void output(char a,char *reverse)

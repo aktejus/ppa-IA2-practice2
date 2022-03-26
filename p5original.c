@@ -28,4 +28,4 @@ int gcd(int a,int b)
     c=gcd(a,b);
     output(a,b,c);
     return 0;
-  }
+  } 
