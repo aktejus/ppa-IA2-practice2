@@ -14,9 +14,9 @@ void output(float base,float height,float area)
 }
 int main()
 {
-  float a,b,c;
+  float a,b,x;
   input(&a,&b);
-  find_area(a,b,&c);
-  output(a,b,c);
+  find_area(a,b,&x);
+  output(a,b,x);
   return 0;
 }
