@@ -5,7 +5,7 @@ void input_string(char *a)
     printf("enter the string\n");
     scanf("%s", a);
 }
-void str_reverse(char *a, char *re)//actually u cant do it like that .
+void str_reverse(char *a, char *re)
 {
     int n = strlen(a);
 
